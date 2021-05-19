@@ -1,0 +1,1 @@
+const Freezeframe = require('freezeframe');

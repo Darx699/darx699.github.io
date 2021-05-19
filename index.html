@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Darx699">
+      <title>Projet Terminale</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="login-page.css">
+      <script defer src="login-page.js"></script>
+        <script type="text/javascript" src="js/horloge.js"></script>
+      <script type="text/javascript" src="js/freezeframe.js"></script>
+      <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
+  </head>
+    <body>
+      <div class="clock">
+        <span id="hr">00</span>
+        <span> : </span>
+        <span id="min">00</span>
+        <span> : </span>
+        <span id="sec">00</span>
+      </div>
+      <div class="parent">
+        <div class="freezeframe" style="text-align: center; margin: auto;">
+          <img class="freezeframe" src="img/ouvertureporte.gif" alt="Porte ouverture" onclick= "document.forms[0].elements['Example'].value = 'Porte ouverte'">
+          <img class="freezeframe" src="img/fermetureporte.gif" alt="Porte fermeture" onclick= "document.forms[0].elements['Example'].value = 'Porte fermée'"><br>
+        </div>
+      </div>
+      <div class="parent">
+        <div class="childbox">
+          <form>
+            <input type="text" name="Example" disabled/>
+          </form>
+        </div>
+      </div>
+      <!-- Rounded switch -->
+        <label class="switch" onclick= "document.forms[0].elements['Example'].value = 'Porte ouverte'">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+    </body>
+</html>
+
